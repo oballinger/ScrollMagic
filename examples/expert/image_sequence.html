@@ -179,7 +179,9 @@
 						);
 
 						// init controller
-						var controller = new ScrollMagic.Controller();
+						var controller = new ScrollMagic.Controller({globalSceneOptions: {
+									triggerHook: '0'
+							}))
 
 						// build scene
 						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
